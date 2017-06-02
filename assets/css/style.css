@@ -82,12 +82,16 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     .show-for-large {
         display: none!important       
     }
+    .top-bar ul.menu li.menu-button{
+      display:block;
+    }
 }
 @media only screen and (max-width: 1400px){
   .top-bar ul.menu {
     background:transparent;
     border:1px solid #d9d9d9;
     margin-right:2rem;
+    display:block;
   }
   .top-bar ul.menu li>a {
     line-height: 2;
