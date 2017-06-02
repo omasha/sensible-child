@@ -12,8 +12,9 @@ get_header(); ?>
         	<section id="hero-header" data-speed="8" data-type="background" style="background: url('<?php echo esc_url( get_theme_mod( 'sensiblewp_main_bg', ( get_stylesheet_directory_uri( 'stylesheet_directory') . '/img/hero-1.jpg'))); ?>')  50% 0 no-repeat fixed;"> 
             	<div class="hero-content-container">
                 	<div class="hero-content">
-                            
-                            <span class="branch-one">
+            
+                            <span class="master">
+
                             
                             <?php if ( get_theme_mod( 'sensiblewp_first_heading' ) ) : ?>
                             
