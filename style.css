@@ -1,0 +1,21 @@
+/*
+Theme Name: Sensible WP Child
+Description: Sensible WP Child Theme for Survival Guide
+Author: MO
+Template: sensible-wp
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* For some reason this breaks things when placed elsewhere */
+
+.off-canvas.position-right {
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    -webkit-transform: translateX(280px);
+    transform: translateX(280px);
+    overflow-y: auto;
+}

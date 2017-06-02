@@ -1,0 +1,279 @@
+.centered {
+  margin:0 auto;
+  float:none;
+}
+#content {
+  min-height:600px;
+}
+.site-content {
+    background: #fafafa;
+}
+
+.site-header{
+  position:relative;
+  z-index: 0;
+}
+.sticky-menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+.site-branding {
+    float: left;
+    width: auto;
+    max-width: 100px;
+    margin-left: 2rem;
+}
+.site-content p,
+.site-content ul{
+  color:#8c9398;
+}
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+   
+.dropdown:active,
+.dropdown:hover {
+  border :none;
+}
+#navigation-container{
+  background: #ffffff;
+  padding:0.5em 0;
+}
+
+.top-bar {
+  padding:0;
+  background: #ffffff;
+  color: #183d51;
+}
+.top-bar ul.menu:hover,
+.top-bar ul.menu:active{
+  background:#f0f0f0;
+}
+.top-bar .site-logo a{
+  line-height: 3;
+}
+.top-bar .top-bar-right {
+    width:auto!important;
+}
+.top-bar .menu > .menu-button{
+  padding:5px;
+}
+.top-bar .menu > .menu-button >a {
+  padding:5px;
+  display:inline-block;
+}
+.top-bar .top-bar-section ul {background-color :#ffffff!important;}
+
+ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
+    background: white;
+}
+@media only screen and (min-width: 1390px) {
+    .mobile-only {
+        display: none!important
+    }
+    
+}
+@media only screen and (max-width: 1400px){
+    .show-for-large {
+        display: none!important       
+    }
+}
+@media only screen and (max-width: 1400px){
+  .top-bar ul.menu {
+    background:transparent;
+    border:1px solid #d9d9d9;
+    margin-right:2rem;
+  }
+  .top-bar ul.menu li>a {
+    line-height: 2;
+  }
+}
+.top-bar-section {
+    left: 0;
+    position: relative;
+    width: auto;
+    padding-top:10px;   
+}
+@media only screen and (min-width: 1500px) {
+.top-bar-section {
+    margin-right:3rem;
+    }
+}
+
+.top-bar .top-bar-section ul li > a{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size:0.9em;
+    text-transform: uppercase;
+    -webkit-transition: background 0.2s ease-out;
+    transition: background 0.2s ease-out;
+    color:#333;
+}
+.top-bar .top-bar-section ul li > a:after{
+  margin-top:-5px!important;
+}
+.top-bar ul.menu.submenu {
+  margin-top:5px;
+}
+.top-bar ul.menu.submenu > li > a {
+  line-height: 1.2;
+}
+
+ .top-bar .top-bar-section ul li {
+    background: #ffffff;
+}
+ .top-bar .top-bar-section ul li > a{
+    color: #183d51;
+    padding-right:25px!important;
+}
+
+.top-bar ul.menu:hover,
+.top-bar ul.menu:active{
+  background:#f0f0f0;
+}
+.top-bar .top-bar-right {
+    width:auto!important;
+}
+  
+.top-bar .top-bar-section li a {
+    color: #183d51;
+    background: #ffffff;
+}
+ .top-bar .top-bar-section li a:hover {
+    color: #183d51;
+    background-color: #efefef;
+    background: #efefef;
+}
+
+/* OFF-CANVAS MENU */   
+
+.off-canvas{
+  background:#f6f6f6;
+}
+
+.off-canvas .is-accordion-submenu-parent>a:after{
+  border-color: #515151 transparent transparent;
+}
+.off-canvas .menu>li > a{
+  text-transform: uppercase!important;
+  color:#333;
+  line-height:1.2;
+  padding: 1.2rem 1rem;
+}
+.off-canvas .menu .active>a{
+  background:#e0e0e0;
+}
+.off-canvas .menu>li > a:active,
+.off-canvas .menu>li > a:hover {
+  border:1px #999 solid;
+  background:#fff;
+}
+.off-canvas .is-accordion-submenu li a {
+  padding-left:1.4rem;
+}
+
+
+/* ============================= */
+.search .entry-header .entry-title{
+    font-size: 25px;
+    line-height: 1.3;
+    text-align: center;
+}
+.search .entry-header {
+    background: transparent;
+    padding: 0.5em;
+}
+.search .entry-header h1.entry-title a {
+  color:#183d51;
+  text-transform:uppercase;
+  text-decoration: underline;
+}
+.search-form-wrapper {
+  margin:2rem 0;
+}
+.search-form-wrapper .search-form {
+  display:flex;
+}
+.search-form-wrapper .search-form label {
+  flex:3;
+  margin-right:1.5em;
+}
+.search-form-wrapper .search-form input {
+  padding:10px 0 10px 10px;
+  height:auto;
+  margin:0;
+}
+.search-form-wrapper .search-form .search-submit {
+  flex:1;
+  padding:0;
+  line-height: 1;
+}
+
+/*================================*/
+.paging-navigation .nav-previous, 
+.post-navigation .nav-previous,
+.paging-navigation .nav-next, 
+.post-navigation .nav-next{
+  background:#565656;
+  padding: 1em 20px 1em;
+}
+
+#sidebar input[type="search"] {
+padding: 5px;
+max-width: 250px;
+font-size:1.1em;
+}
+input[type="search"] {
+font-size:16px;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 2px solid;
+  border-color: #565656;
+  border-radius: 4px;
+  background: #565656;
+  box-shadow: none;
+  color: #ffffff !important; 
+  cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 600;
+  padding: 0;
+  text-shadow: none;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #565656;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #565656;
+}
+/* HOMEPAGE */
+.home-content {
+  text-align:left;
+}
+.hero-home {
+  display: block;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  text-align: center
+}
