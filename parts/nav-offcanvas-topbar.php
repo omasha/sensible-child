@@ -3,7 +3,7 @@
 <!-- <div class="top-bar" id="top-bar-menu"> -->
 	
 	<div class="navigation top-bar-section top-bar-right show-for-large desktop-only">
-		<?php joints_top_nav(); ?>	
+		<?php swp_top_nav(); ?>	
 	</div>
 	<div class="top-bar-right float-right mobile-only">
 		<ul class="menu">
