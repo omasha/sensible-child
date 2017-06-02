@@ -27,10 +27,12 @@
 						$myposts = get_posts( $args );
 						foreach( $myposts as $post ) :	setup_postdata($post); 
                         if ( get_post_meta($post->ID, 'link_to_section', true) ){
-                            $raw_url = get_post_meta($post->ID, 'link_to_section', true);
-                            $url = filter_var($raw_url, FILTER_SANITIZE_URL);
+                            $home_url = get_site_url();
+                            $url_part = get_post_meta($post->ID, 'link_to_section', true);
+                            $url = $home_url . '/' . sanitize_text_field($url_part);
+                            
                         } else {
-                            $url = home_url();
+                            $url = $home_url;
                         }
 
                         ?>
