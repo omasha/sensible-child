@@ -11,7 +11,7 @@ require_once(get_stylesheet_directory().'/assets/functions/menu.php');
 require_once(get_stylesheet_directory().'/assets/functions/enqueue-scripts.php'); 
 require_once(get_stylesheet_directory().'/assets/functions/disable-emoji.php'); 
 
-
+// deregister scripts from master theme we don't need
 function sensiblewp_child_scripts() { 
 	wp_dequeue_script( 'sensiblewp-menu');
 	wp_dequeue_script( 'sensiblewp-navigation');
