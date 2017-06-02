@@ -13,7 +13,7 @@ get_header(); ?>
             	<div class="hero-content-container">
                 	<div class="hero-content">
                             
-                            <span>
+                            <span class="master">
                             
                             <?php if ( get_theme_mod( 'sensiblewp_first_heading' ) ) : ?>
                             
