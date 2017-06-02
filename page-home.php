@@ -13,7 +13,7 @@ get_header(); ?>
             	<div class="hero-content-container">
                 	<div class="hero-content">
                             
-                            <span>
+                            <span class="branch-one">
                             
                             <?php if ( get_theme_mod( 'sensiblewp_first_heading' ) ) : ?>
                             
@@ -109,13 +109,6 @@ get_header(); ?>
         <?php if( get_theme_mod( 'active_blog' ) == '') : ?> 
         
         	<?php get_template_part( 'content', 'news' ); // news ?> 
-        
-		<?php endif; ?>
-		
-        
-        <?php if( get_theme_mod( 'active_team' ) == '') : ?>   
-        
-        	<?php get_template_part( 'content', 'team' ); // team ?>
         
 		<?php endif; ?>
 		
