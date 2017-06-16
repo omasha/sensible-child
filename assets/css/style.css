@@ -162,22 +162,63 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 .off-canvas .is-accordion-submenu-parent>a:after{
   border-color: #515151 transparent transparent;
 }
+.off-canvas .menu>li {
+  border-bottom:1px solid white;
+  overflow:hidden;
+}
+.off-canvas .menu>li > ul > li:hover,
+.off-canvas .menu>li > ul > li:active{
+  background:#ececec;
+}
+.off-canvas .menu>li > ul > li{
+  border-bottom:none;
+  border-top:1px solid white;
+}
 .off-canvas .menu>li > a{
   text-transform: uppercase!important;
   color:#333;
   line-height:1.2;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 0 1.2rem 1rem;
+  margin-right:40px;
 }
-.off-canvas .menu .active>a{
-  background:#e0e0e0;
+.off-canvas .menu > li > ul > li > a {
+  margin-right:0;
+  padding-left:2rem;
 }
-.off-canvas .menu>li > a:active,
-.off-canvas .menu>li > a:hover {
-  border:1px #999 solid;
-  background:#fff;
-}
+
 .off-canvas .is-accordion-submenu li a {
   padding-left:1.4rem;
+}
+.off-canvas .menu .active>a {
+  background:transparent;
+}
+.off-canvas li.current-menu-item {
+  background:#e6e6e6;
+}
+.off-canvas li.current-menu-item > ul > li {
+  background:transparent;
+}
+.side-nav-toggle {
+  cursor:pointer;
+  float:right;
+  background:#eeeeee;
+}
+.side-nav-toggle > i {
+  font-size: 2.5rem;
+    line-height: 1.6;
+    color: #959595;
+    padding: 0 1.1rem;
+}
+
+.off-canvas li > .vertical.menu {
+  display:none;
+}
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
@@ -270,6 +311,35 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
   border-color: #565656;
+}
+/* FOOTER */
+.footer-content{
+  background:#2b2b2b;
+}
+.footer-content a,
+.footer-content p{
+  color:#fff;
+}
+.footer-content a{
+  text-decoration: underline;
+}
+@media only screen and (min-width: 767px) {
+
+  .footer-items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-item{
+  min-width: 30%;
+  text-align: center;
+  }
+  .footer-item.first{
+    text-align: left;
+  }
+  .footer-item.last{
+    text-align: right;
+  }
 }
 /* HOMEPAGE */
 .home-content {
