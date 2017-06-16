@@ -3,8 +3,20 @@ TYPOGRAPHY
 ====================== */
 h1,h2,h3,h4 {
   font-family:'Jura', sans-serif;
+  line-height: 1;
 }
-
+h1 {
+  font-size:4rem;
+}
+h2 {
+  font-size:3.3rem;
+}
+h1.widget-title{
+  font-size:2.5rem;
+}
+a:hover, a:focus, a:active {
+  color: #d98100!important;
+}
 .centered {
   margin:0 auto;
   float:none;
@@ -360,6 +372,20 @@ input[type="submit"]:active {
   .footer-item.last{
     text-align: right;
   }
+}
+
+/* SIDEBAR WIDGETS */
+
+.simple-section-nav a{
+  font-family: 'Khand';
+  font-size: 1.85rem;
+}
+.simple-section-nav a:before{
+  font-family: FontAwesome;
+  content:'\f054';
+  width: 17px;
+  display: inline-block;
+  font-size: 15px;
 }
 
 /* HOMEPAGE */
