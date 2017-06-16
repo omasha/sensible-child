@@ -2,7 +2,7 @@
 <div class="footer-content">
   <div class="grid grid-pad footer-items">
         <div class="footer-item first">
-          <p><a href="http://survival.burningman.org/credits">credits</a></p>
+          <p><a href="<?php echo site_url(); ?>/credits">credits</a></p>
         </div>
 
         <div class="footer-item">

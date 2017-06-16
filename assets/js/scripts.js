@@ -4,6 +4,7 @@ jQuery(document).foundation();
 
   var isMobile = false;
     if( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()) ) { isMobile = true; }
+  
   // overriding standard foundation dropdown
   
   $.fn.bmSideNav = function() {
@@ -49,33 +50,31 @@ jQuery(document).foundation();
  
   stickyNav();
 
-$(window).scroll(function() {
+  $(window).scroll(function() {
     stickyNav();
   });
+  
   // slideout footer
-//   function setFooter() {
-        
-//         // Only on desktop
-//         if( !isMobile ) {
-//             if( !$('.dummy-footer').length ) {
-//                 $('.footer').addClass('slide-out').before( $( '<div class="dummy-footer"></div>' ).css( 'height', $('.footer').outerHeight() - 1 + 'px' ) );
-//             }else{
-//                 $('.dummy-footer').css( 'height', $('footer').outerHeight() - 1 + 'px' );
-//             }
-//         }
-//     }
-//   $(window).resize(function () {
-//   setFooter();        
-// }); 
-//   $(document).ready(function(){
-//   setFooter();
-//   });
-   
+  function setFooter() {       
+    // Only on desktop
+    if( !isMobile ) {
+      $('body').imagesLoaded( function() {
+        var fHeight = $('.footer').outerHeight() - 1;
+        if( !$('.dummy-footer').length ) {
+                $('.footer').addClass('slide-out').before( $( '<div class="dummy-footer"></div>' ).css( 'height', fHeight + 'px' ) );
+        } else {
+                $('.dummy-footer').css( 'height', fHeight + 'px' );
+        }
+      });          
+    }
+  }
+  
+  $(window).resize(function () {
+  setFooter();        
+  }); 
+  
+  $(document).ready(function(){
+  setFooter();
+  });
 
 })(jQuery);
-
-
-
-// jQuery(window).resize(function () {
-//   setFooter();        
-// });

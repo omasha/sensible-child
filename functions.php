@@ -16,7 +16,11 @@ function sensiblewp_child_scripts() {
 	wp_dequeue_script( 'sensiblewp-menu');
 	wp_dequeue_script( 'sensiblewp-navigation');
 	wp_dequeue_script( 'sensiblewp-scripts');
+	wp_dequeue_script( 'sensiblewp-parallax');
+	wp_dequeue_script( 'sensiblewp-placeholder');
+	wp_dequeue_script( 'sensiblewp-placeholdertext');
 	wp_dequeue_style( 'sensiblewp-menu-css');
+	wp_dequeue_style( 'sensiblewp-headings-fonts');
 }
 
 add_action( 'wp_enqueue_scripts', 'sensiblewp_child_scripts', 999 );
