@@ -14,6 +14,7 @@ h2 {
 .widget-title h2{
   font-size:2.5rem;
   line-height:1;
+  letter-spacing: -1px;
 }
 a:hover, a:focus, a:active {
   color: #d98100!important;
@@ -376,7 +377,13 @@ input[type="submit"]:active {
   }
 }
 
-/* SIDEBAR WIDGETS */
+/* SIDEBAR AND WIDGETS */
+@media only screen and (max-width: 767px) {
+  #secondary {
+    padding-top:2rem;
+    border-top:1px dotted;
+  }
+}
 
 .simple-section-nav a{
   font-family: 'Khand';

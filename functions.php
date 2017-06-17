@@ -31,6 +31,8 @@ function swp_new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'swp_new_excerpt_more');
 
+// need to register the main sidebar in a different way
+
 function swc_sidebars_init() {
 	unregister_sidebar('sidebar-1');
 	register_sidebar( array(
