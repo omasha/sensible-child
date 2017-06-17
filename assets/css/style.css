@@ -289,10 +289,11 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
   padding: 1em 20px 1em;
 }
 
-#sidebar input[type="search"] {
+#secondary input[type="search"] {
 padding: 5px;
 max-width: 250px;
 font-size:1.1em;
+display:inline-block;
 }
 input[type="search"] {
 font-size:16px;
