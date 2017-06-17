@@ -85,7 +85,7 @@ a:hover, a:focus, a:active {
   padding:5px;
 }
 .top-bar .menu > .menu-button >a {
-  padding:5px;
+  padding: 2px 6px;
   display:inline-block;
 }
 .top-bar .top-bar-section ul {background-color :#ffffff!important;}
@@ -349,7 +349,7 @@ input[type="submit"]:active {
     z-index: -1;
 }
 .footer-content{
-  background:#2b2b2b;
+  background:#49447d;
 }
 .footer-content a,
 .footer-content p{
