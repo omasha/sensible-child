@@ -11,8 +11,9 @@ h1 {
 h2 {
   font-size:3.3rem;
 }
-h1.widget-title{
+.widget-title h2{
   font-size:2.5rem;
+  line-height:1;
 }
 a:hover, a:focus, a:active {
   color: #d98100!important;
@@ -46,10 +47,10 @@ a:hover, a:focus, a:active {
     max-width: 100px;
     margin-left: 2rem;
 }
-.site-content p,
+/*.site-content p,
 .site-content ul{
   color:#8c9398;
-}
+}*/
 
 /* ==========================================================================
    NAVIGATION

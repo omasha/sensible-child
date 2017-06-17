@@ -30,3 +30,18 @@ function swp_new_excerpt_more($more) {
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> ...read more</a>';
 }
 add_filter('excerpt_more', 'swp_new_excerpt_more');
+
+function swc_sidebars_init() {
+	unregister_sidebar('sidebar-1');
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'sensible-wp' ),
+		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="widget-title"><h2>',
+		'after_title'   => '</h2></div>',
+	) );
+}
+add_action( 'widgets_init', 'swc_sidebars_init', 11 );
+
