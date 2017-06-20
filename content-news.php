@@ -40,9 +40,7 @@
                         <div class="col-1-2 two-clear wow animated fadeInUp" data-wow-delay="0.25s">
             
             				<a href="<?php echo $url;  ?>"><?php the_post_thumbnail('sensible-wp-home-front'); ?></a> 
-							
-                        	<p>Content here if we want it</p>
-                        
+							                        
                         </div><!-- col-1-3 --> 
 
 					<?php endforeach; ?>
