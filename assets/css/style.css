@@ -1,4 +1,47 @@
 /* ====================
+BACKGROUNDS
+====================== */
+#content {
+  background:url(../images/tile_BG.jpg);
+}
+#secondary {
+  background:url(../images/SG17_Sidebar_tile.jpg);
+  padding-right: 0;
+  margin-top:-20px;
+}
+#secondary:before {
+    content: '';
+    background: url(../images/SG17_Sidebar_top.jpg) 0 0 repeat-x;
+    height: 160px;
+    display: block;
+}
+#secondary:after {
+    content: '';
+    background: url(../images/SG17_Sidebar_bottom.jpg) 0 0 no-repeat;
+    background-size:contain;
+    height: 500px;
+    display: block;
+}
+#secondary > div {
+  padding:0 1.5rem;
+  margin-top:2rem;
+}
+@media only screen and (max-width: 767px) {
+  #secondary {
+    padding-top:2rem;
+    margin-left:-20px;
+    margin-right:-10px;
+  }
+  #secondary:after {
+    content: '';
+    background: url(../images/SG17_Sidebar_bottom768.jpg) 0 0 no-repeat;
+    background-size:contain;
+    height: 500px;
+    display: block;
+}
+}
+
+/* ====================
 TYPOGRAPHY
 ====================== */
 h1,h2,h3,h4 {
@@ -246,6 +289,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 
 
 /* ============================= */
+
 .search .entry-header .entry-title{
     font-size: 25px;
     line-height: 1.3;
@@ -378,12 +422,8 @@ input[type="submit"]:active {
 }
 
 /* SIDEBAR AND WIDGETS */
-@media only screen and (max-width: 767px) {
-  #secondary {
-    padding-top:2rem;
-    border-top:1px dotted;
-  }
-}
+
+
 
 .simple-section-nav a{
   font-family: 'Khand';
