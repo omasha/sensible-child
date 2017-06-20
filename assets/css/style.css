@@ -106,7 +106,7 @@ a:hover, a:focus, a:active {
 }
 #navigation-container{
   background: #ffffff;
-  padding:0.5em 0;
+  padding:0.2em 0;
 }
 
 .top-bar {
@@ -128,7 +128,7 @@ a:hover, a:focus, a:active {
   padding:5px;
 }
 .top-bar .menu > .menu-button >a {
-  padding: 2px 6px;
+  padding: 1px 6px;
   display:inline-block;
 }
 .top-bar .menu > .menu-button >a > i{
