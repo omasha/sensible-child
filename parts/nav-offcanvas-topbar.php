@@ -8,7 +8,7 @@
 	<div class="top-bar-right float-right mobile-only">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-			<li class="menu-button"><a data-toggle="off-canvas"><?php _e( 'MENU', 'sensible-wp' ); ?></a><i class="fa fa-bars" aria-hidden="true"></i></li>
+			<li class="menu-button"><a data-toggle="off-canvas"><?php _e( 'MENU', 'sensible-wp' ); ?><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 			
 		</ul>
 	</div>

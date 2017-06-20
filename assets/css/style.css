@@ -131,7 +131,13 @@ a:hover, a:focus, a:active {
   padding: 2px 6px;
   display:inline-block;
 }
+.top-bar .menu > .menu-button >a > i{
+  padding-left: 5px;
+}
 .top-bar .top-bar-section ul {background-color :#ffffff!important;}
+.menu>li>a i{
+    vertical-align: baseline;
+}
 
 ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     background: white;
@@ -402,6 +408,13 @@ input[type="submit"]:active {
 .footer-content a{
   text-decoration: underline;
 }
+.footer-content {
+  padding-bottom:1.5rem;
+}
+.footer-item p {
+  margin-bottom:0.5rem;
+}
+
 @media only screen and (min-width: 767px) {
 
   .footer-items {
