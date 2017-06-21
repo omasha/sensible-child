@@ -436,10 +436,8 @@ input[type="submit"]:active {
 
 /* SIDEBAR AND WIDGETS */
 
-
-
 .simple-section-nav a{
-  font-family: 'Khand';
+  font-family: 'Khand','helvetica neue',helvetica,sans-serif;
   font-size: 1.85rem;
 }
 .simple-section-nav a:before{
