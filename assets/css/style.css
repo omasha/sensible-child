@@ -478,6 +478,14 @@ input[type="reset"], input[type="submit"] {
     letter-spacing: 1px;
     padding: 2px 7px;
 }
+#secondary .search-form input[type="search"],
+#secondary .search-form input[type="submit"]{
+  display:inline-block;
+  vertical-align: middle;
+}
+#secondary .search-form input[type="search"] {
+  margin:0;
+}
 
 /* HOMEPAGE */
 .home-content {
