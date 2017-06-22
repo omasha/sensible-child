@@ -491,6 +491,9 @@ input[type="reset"], input[type="submit"] {
 .home-content {
   text-align:left;
 }
+.home-content h2 {
+  text-align: center;
+}
 .hero-home {
   display: block;
   margin-bottom: 2em;
