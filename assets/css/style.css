@@ -19,7 +19,7 @@ BACKGROUNDS
     content: '';
     background: url(../images/SG17_Sidebar_bottom.jpg) 0 0 no-repeat;
     background-size:contain;
-    height: 500px;
+    height: 400px;
     display: block;
 }
 #secondary > div {
@@ -38,7 +38,16 @@ BACKGROUNDS
     background-size:contain;
     height: 500px;
     display: block;
+ }
 }
+@media only screen and (max-width: 480px) {
+  #secondary:after {
+    content: '';
+    background: url(../images/SG17_Sidebar_bottom768.jpg) 0 0 no-repeat;
+    background-size:contain;
+    height: 300px;
+    display: block;
+ }
 }
 
 /* ====================
